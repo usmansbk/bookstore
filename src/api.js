@@ -24,4 +24,9 @@ export const createBook = async (book) => {
   return response.status === 201;
 };
 
-export default {};
+export const getBooks = async () => {
+  const appId = localStorage.getItem(STORAGE_KEY);
+  const response = await fetch(`${BASE_URL}/apps/${appId}/books`);
+
+  return response.json();
+};
