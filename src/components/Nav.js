@@ -5,7 +5,7 @@ import './Nav.css';
 const Nav = ({ title, routes }) => (
   <nav className="nav-bar">
     <Link to="/">{title}</Link>
-    <ul>
+    <ul className="nav-links">
       {routes.map(({ name, path }) => (
         <li key={path}>
           <NavLink exact to={path}>{name}</NavLink>

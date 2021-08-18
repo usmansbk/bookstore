@@ -1,5 +1,17 @@
+a {
+  text-decoration: none;
+}
+
 .nav-bar {
   padding: 24px 10%;
   background-color: white;
   border-bottom: solid 1px #e8e8e8;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  gap: 40px;
 }
