@@ -4,7 +4,7 @@ import './Nav.css';
 
 const Nav = ({ title, routes }) => (
   <nav className="nav-bar">
-    <Link to="/">{title}</Link>
+    <Link className="nav-brand" to="/">{title}</Link>
     <ul className="nav-links">
       {routes.map(({ name, path }) => (
         <li key={path}>
