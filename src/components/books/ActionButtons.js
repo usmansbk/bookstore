@@ -8,10 +8,12 @@ const ActionButtons = ({ id }) => {
   const handleRemove = () => dispatch(deleteBook(id));
 
   return (
-    <div>
-      <button type="button">Comments</button>
-      <button type="button" onClick={handleRemove}>Remove</button>
-      <button type="button">Edit</button>
+    <div className="action-buttons">
+      <button className="button-outline" type="button">Comments</button>
+      <div className="vertical-divider" />
+      <button className="button-outline" type="button" onClick={handleRemove}>Remove</button>
+      <div className="vertical-divider" />
+      <button className="button-outline" type="button">Edit</button>
     </div>
   );
 };
