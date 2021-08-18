@@ -1,31 +1,28 @@
-import {BrowserRouter as Router, Switch, Route, NavLink, Link} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Books from './components/books/Books';
 import Categories from './components/categories/Categories';
+import Nav from './components/Nav';
 
 const routes = [
   {
     path: '/',
-    name: 'Books',
+    name: 'BOOKS',
     component: <Books />,
   },
   {
     path: '/categories',
-    name: 'Categories',
+    name: 'CATEGORIES',
     component: <Categories />,
   },
 ];
 
-const Nav = () => (
-  <nav>
-    <Link to="/">Bookstore</Link>
-    <ul>
-      {routes.map(({ name, path }) => <NavLink key={path} exact to={path}>{name}</NavLink>)}
-    </ul>
-  </nav>
-);
-
 const App = () => (
-  <h1>Bookstore</h1>
+  <Router>
+    <Nav title="Bookstore CMS" routes={routes} />
+    <Switch>
+      {routes.map(({ path, component }) => <Route exact key={path}>{component}</Route>)}
+    </Switch>
+  </Router>
 );
 
 export default App;
