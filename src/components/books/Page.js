@@ -1,5 +1,8 @@
+import { useDispatch } from 'react-redux';
+import { useEffect } from 'react';
 import Books from './Books';
 import AddBook from './AddBook';
+import { getBooks } from '../../redux/books/books';
 
 const books = [
   {
@@ -31,11 +34,19 @@ const books = [
   },
 ];
 
-const BooksPage = () => (
-  <div>
-    <Books books={books} />
-    <AddBook categories={books.map((book) => book.category)} />
-  </div>
-);
+const BooksPage = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getBooks());
+  }, []);
+
+  return (
+    <div>
+      <Books books={books} />
+      <AddBook categories={books.map((book) => book.category)} />
+    </div>
+  );
+};
 
 export default BooksPage;
