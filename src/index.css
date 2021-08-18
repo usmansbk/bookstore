@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&display=swap');
+
 a {
   color: inherit;
 }
 
 body {
-  padding: 10% 8%;
+  padding: 8%;
   background-color: #f5f6fa;
 }
 
