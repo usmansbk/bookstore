@@ -10,7 +10,7 @@ const Book = ({ book }) => {
 
   return (
     <div className="book">
-      <div>
+      <div className="book-content">
         <div className="book-info">
           <h4 className="book-category">{category}</h4>
           <h2 className="book-title">{title}</h2>

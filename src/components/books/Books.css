@@ -42,3 +42,8 @@
     font-weight: 300;
     color: #4386bf;
 }
+
+.book-content {
+    display: flex;
+    justify-content: space-between;
+}
