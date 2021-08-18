@@ -30,6 +30,8 @@ const books = [
   },
 ];
 
-const Books = () => <ul>{books.map((book) => <Book key={book.title} book={book} />)}</ul>;
+const Books = () => (
+  <ul>{books.map((book) => <li key={book.title}><Book book={book} /></li>)}</ul>
+);
 
 export default Books;
