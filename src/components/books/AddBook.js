@@ -1,8 +1,11 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 import { nanoid } from 'nanoid';
+import { useDispatch } from 'react-redux';
+import { addBook } from '../../redux/books/books';
 
 const AddBook = ({ categories = [] }) => {
+  const dispatch = useDispatch();
   const [title, setTitle] = useState('');
   const [category, setCategory] = useState(categories[0]);
 
@@ -14,7 +17,7 @@ const AddBook = ({ categories = [] }) => {
       title,
       category,
     };
-    console.log(book);
+    dispatch(addBook(book));
     setTitle('');
     setCategory(categories[0]);
     event.preventDefault();
