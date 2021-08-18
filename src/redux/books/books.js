@@ -18,7 +18,7 @@ export const removeBook = (id) => ({
 });
 
 export const postBook = (book) => async (dispatch) => {
-  const isCreated = createBook(book);
+  const isCreated = await createBook(book);
   if (isCreated) {
     dispatch(addBook(book));
   }
