@@ -1,7 +1,16 @@
 a {
   color: inherit;
 }
+
+body {
+  padding: 10% 8%;
+  background-color: #f5f6fa;
+}
+
 #root {
-  padding: 9.313rem 3.75rem 7.688rem 6.25rem;
-  background-color: var(--pale-grey);
+  margin: 0;
+  padding: 0 0 10% 0;
+  border-radius: 4px;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.5);
+  background-color: #fafafa;
 }
