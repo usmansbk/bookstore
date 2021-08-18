@@ -4,6 +4,9 @@ const STORAGE_KEY = 'appId';
 const post = (endpoint, body = {}) => fetch(`${BASE_URL}${endpoint}`, {
   method: 'POST',
   body: JSON.stringify(body),
+  headers: {
+    'Content-type': 'application/json; charset=UTF-8',
+  },
 });
 
 export const createApp = async () => {
@@ -18,6 +21,7 @@ export const createApp = async () => {
 };
 
 export const createBook = async (book) => {
+  console.log(book);
   const appId = localStorage.getItem(STORAGE_KEY);
   const response = await post(`/apps/${appId}/books`, book);
 
