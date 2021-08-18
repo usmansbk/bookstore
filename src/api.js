@@ -12,7 +12,7 @@ export const createApp = async () => {
   if (!appId) {
     const response = await post('/apps');
 
-    appId = response.text();
+    appId = await response.text();
     localStorage.setItem(STORAGE_KEY, appId);
   }
 };
