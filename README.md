@@ -6,7 +6,7 @@
 
 ![screenshot](./app_screenshot.jpeg)
 
-The Bookstore website allows you to:
+The Bookstore website is a content management system that allows you to:
 
 - Display a list of books
 - Add a book
