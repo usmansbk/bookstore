@@ -11,10 +11,10 @@ const Book = ({ book }) => {
   return (
     <div className="book">
       <div>
-        <div>
-          <h4>{category}</h4>
-          <h2>{title}</h2>
-          <h6>{author}</h6>
+        <div className="book-info">
+          <h4 className="book-category">{category}</h4>
+          <h2 className="book-title">{title}</h2>
+          <h6 className="book-author">{author}</h6>
         </div>
         <Progress progress={progress} />
       </div>
