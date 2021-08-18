@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import Progress from './Progress';
 
 const Actions = () => (
   <div>
@@ -7,22 +8,6 @@ const Actions = () => (
     <button type="button">Edit</button>
   </div>
 );
-
-const Progress = ({ progress }) => {
-  const { completed, currentChapter } = progress;
-  return (
-    <div>
-      <div>
-        <p>{`${completed}%`}</p>
-        <p>Completed</p>
-      </div>
-      <div>
-        <p>CURRENT CHAPTER</p>
-        <p>{currentChapter}</p>
-      </div>
-    </div>
-  );
-};
 
 const Book = ({ book }) => {
   const {
@@ -42,13 +27,6 @@ const Book = ({ book }) => {
       <Actions />
     </div>
   );
-};
-
-Progress.propTypes = {
-  progress: PropTypes.shape({
-    currentChapter: PropTypes.string.isRequired,
-    completed: PropTypes.string.isRequired,
-  }).isRequired,
 };
 
 Book.propTypes = {
