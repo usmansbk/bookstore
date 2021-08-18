@@ -2,7 +2,7 @@ import Book from './Book';
 
 const books = [
   {
-    genre: 'Action',
+    category: 'Action',
     title: 'The Hunger Games',
     author: 'Suzanne Collins',
     progress: {
@@ -11,7 +11,7 @@ const books = [
     },
   },
   {
-    genre: 'Science Fiction',
+    category: 'Science Fiction',
     title: 'Dune',
     author: 'Frank Herbert',
     progress: {
@@ -20,7 +20,7 @@ const books = [
     },
   },
   {
-    genre: 'Economy',
+    category: 'Economy',
     title: 'Capital in the Twenty-First Century',
     author: 'Suzanne Collins',
     progress: {

@@ -26,14 +26,14 @@ const Progress = ({ progress }) => {
 
 const Book = ({ book }) => {
   const {
-    title, genre, author, progress,
+    title, category, author, progress,
   } = book;
 
   return (
     <div>
       <div>
         <div>
-          <h4>{genre}</h4>
+          <h4>{category}</h4>
           <h2>{title}</h2>
           <h6>{author}</h6>
         </div>
@@ -55,7 +55,7 @@ Book.propTypes = {
   book: PropTypes.shape({
     title: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
-    genre: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
     progress: PropTypes.shape({
       currentChapter: PropTypes.string.isRequired,
       completed: PropTypes.string.isRequired,
