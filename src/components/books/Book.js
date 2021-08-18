@@ -34,10 +34,7 @@ Book.propTypes = {
     title: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
     category: PropTypes.string.isRequired,
-    progress: PropTypes.shape({
-      currentChapter: PropTypes.string.isRequired,
-      completed: PropTypes.string.isRequired,
-    }).isRequired,
+    progress: Progress.propTypes.progress,
   }).isRequired,
 };
 
