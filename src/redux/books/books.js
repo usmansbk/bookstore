@@ -1,9 +1,11 @@
-import { createBook } from '../../api';
+import { createBook, createApp } from '../../api';
 
 const ADD_BOOK = 'bookStore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
 
 const initialState = [];
+
+createApp();
 
 const addBook = (payload) => ({
   type: ADD_BOOK,
