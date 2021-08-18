@@ -4,9 +4,9 @@ const BookProgress = ({ progress }) => {
   const { completed, currentChapter } = progress;
   return (
     <div>
-      <div>
-        <p>{`${completed}%`}</p>
-        <p>Completed</p>
+      <div className="progress-stat">
+        <p className="percent-complete">{`${completed}%`}</p>
+        <p className="completed">Completed</p>
       </div>
       <div>
         <p>CURRENT CHAPTER</p>
