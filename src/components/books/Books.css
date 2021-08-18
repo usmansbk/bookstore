@@ -83,3 +83,24 @@
   opacity: 0.5;
   color: #121212;
 }
+
+.progress-container {
+    display: flex;
+    align-items: center;
+}
+
+.current-chapter-label {
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  font-size: 0.813rem;
+  color: #121212;
+  opacity: 0.5;
+}
+
+.current-chapter {
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  font-size: 1rem;
+  color: #121212;
+  letter-spacing: -0.4px;
+}
