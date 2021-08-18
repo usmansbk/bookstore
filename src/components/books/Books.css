@@ -6,3 +6,10 @@
     flex-direction: column;
     gap: 0.938rem;
 }
+
+.book {
+    background-color: white;
+    border-radius: 4px;
+    border: solid 1px #e8e8e8;
+    padding: 24px;
+}
