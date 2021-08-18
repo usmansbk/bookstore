@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types';
 import { Link, NavLink } from 'react-router-dom';
+import './Nav.css';
 
 const Nav = ({ title, routes }) => (
-  <nav>
+  <nav className="nav-bar">
     <Link to="/">{title}</Link>
     <ul>
       {routes.map(({ name, path }) => (
