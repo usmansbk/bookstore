@@ -40,4 +40,4 @@ export const deleteBook = async (id) => {
   const result = await response.text();
 
   return result === 'The book was deleted successfully!';
-}
+};
