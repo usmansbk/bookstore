@@ -9,11 +9,17 @@ const Actions = () => (
 );
 
 const Progress = ({ progress }) => {
-  const { completed } = progress;
+  const { completed, currentChapter } = progress;
   return (
     <div>
-      <p>{`${completed}%`}</p>
-      <p>Completed</p>
+      <div>
+        <p>{`${completed}%`}</p>
+        <p>Completed</p>
+      </div>
+      <div>
+        <p>CURRENT CHAPTER</p>
+        <p>{currentChapter}</p>
+      </div>
     </div>
   );
 };
