@@ -21,7 +21,6 @@ export const createApp = async () => {
 };
 
 export const createBook = async (book) => {
-  console.log(book);
   const appId = localStorage.getItem(STORAGE_KEY);
   const response = await post(`/apps/${appId}/books`, book);
 
