@@ -30,3 +30,14 @@ export const getBooks = async () => {
 
   return response.json();
 };
+
+export const deleteBook = async (id) => {
+  const appId = localStorage.getItem(STORAGE_KEY);
+  const response = await post(`/apps/${appId}/books/${id}`, {
+    item_id: id,
+  });
+
+  const result = await response.text();
+
+  return result === 'The book was deleted successfully!';
+}
