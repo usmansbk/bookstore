@@ -1,11 +1,9 @@
-import { useDispatch } from 'react-redux';
-import { useEffect } from 'react';
 import Books from './Books';
 import AddBook from './AddBook';
-import { getBooks } from '../../redux/books/books';
 
 const books = [
   {
+    item_id: 'mock-1',
     category: 'Action',
     title: 'The Hunger Games',
     author: 'Suzanne Collins',
@@ -15,6 +13,7 @@ const books = [
     },
   },
   {
+    item_id: 'mock-2',
     category: 'Science Fiction',
     title: 'Dune',
     author: 'Frank Herbert',
@@ -24,6 +23,7 @@ const books = [
     },
   },
   {
+    item_id: 'mock-3',
     category: 'Economy',
     title: 'Capital in the Twenty-First Century',
     author: 'Suzanne Collins',
@@ -34,19 +34,11 @@ const books = [
   },
 ];
 
-const BooksPage = () => {
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(getBooks());
-  }, []);
-
-  return (
-    <div>
-      <Books books={books} />
-      <AddBook categories={books.map((book) => book.category)} />
-    </div>
-  );
-};
+const BooksPage = () => (
+  <div>
+    <Books books={books} />
+    <AddBook categories={books.map((book) => book.category)} />
+  </div>
+);
 
 export default BooksPage;
