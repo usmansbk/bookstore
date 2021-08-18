@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import Progress from './BookProgress';
 import ActionButtons from './ActionButtons';
+import './Books.css';
 
 const Book = ({ book }) => {
   const {
@@ -8,7 +9,7 @@ const Book = ({ book }) => {
   } = book;
 
   return (
-    <div>
+    <div className="book">
       <div>
         <div>
           <h4>{category}</h4>
