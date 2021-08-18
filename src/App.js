@@ -22,11 +22,13 @@ const App = () => (
   <Provider store={store}>
     <Router basename={process.env.PUBLIC_URL}>
       <Nav title="Bookstore CMS" routes={routes} />
-      <Switch>
-        {routes.map(({ path, component }) => (
-          <Route path={path} exact key={path}>{component}</Route>
-        ))}
-      </Switch>
+      <div className="container">
+        <Switch>
+          {routes.map(({ path, component }) => (
+            <Route path={path} exact key={path}>{component}</Route>
+          ))}
+        </Switch>
+      </div>
     </Router>
   </Provider>
 );
