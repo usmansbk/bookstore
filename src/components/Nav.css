@@ -22,3 +22,16 @@ a {
   list-style-type: none;
   gap: 40px;
 }
+
+.nav-link {
+  opacity: 0.5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.813rem;
+  color: #121212;
+  letter-spacing: 1.9px;
+}
+
+.active-link {
+    opacity: 1;
+    color: #121212
+}
