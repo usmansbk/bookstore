@@ -13,7 +13,7 @@ const AddBook = ({ categories = [] }) => {
   const handleCategory = (event) => setCategory(event.target.value);
   const handleSubmit = (event) => {
     const book = {
-      id: nanoid(),
+      item_id: nanoid(),
       title,
       category,
     };
