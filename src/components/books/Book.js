@@ -8,19 +8,41 @@ const Actions = () => (
   </div>
 );
 
+const Progress = ({ progress }) => {
+  const { completed } = progress;
+  return (
+    <div>
+      <p>{`${completed}%`}</p>
+      <p>Completed</p>
+    </div>
+  );
+};
+
 const Book = ({ book }) => {
-  const { title, genre, author } = book;
+  const {
+    title, genre, author, progress,
+  } = book;
 
   return (
     <div>
       <div>
-        <h4>{genre}</h4>
-        <h2>{title}</h2>
-        <h6>{author}</h6>
+        <div>
+          <h4>{genre}</h4>
+          <h2>{title}</h2>
+          <h6>{author}</h6>
+        </div>
+        <Progress progress={progress} />
       </div>
       <Actions />
     </div>
   );
+};
+
+Progress.propTypes = {
+  progress: PropTypes.shape({
+    currentChapter: PropTypes.string.isRequired,
+    completed: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 Book.propTypes = {
