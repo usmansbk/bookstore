@@ -17,7 +17,7 @@ const routes = [
 ];
 
 const App = () => (
-  <Router>
+  <Router basename={process.env.PUBLIC_URL}>
     <Nav title="Bookstore CMS" routes={routes} />
     <Switch>
       {routes.map(({ path, component }) => (
