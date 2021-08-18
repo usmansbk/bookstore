@@ -55,7 +55,14 @@ const reducer = (state = initialState, action) => {
     case LOAD_BOOKS:
       return Object.entries(action.payload).map(([id, value]) => {
         const [book] = value;
-        return { id, ...book };
+        return {
+          item_id: id,
+          ...book,
+          progress: {
+            currentChapter: 'Chapter 3: "A Lesson Learned"',
+            completed: '8',
+          },
+        };
       });
     default:
       return state;
