@@ -20,7 +20,7 @@ const App = () => (
   <Router>
     <Nav title="Bookstore CMS" routes={routes} />
     <Switch>
-      {routes.map(({ path, component }) => <Route exact key={path}>{component}</Route>)}
+      {routes.map(({ path, component }) => <Route path={path} exact key={path}>{component}</Route>)}
     </Switch>
   </Router>
 );
