@@ -18,7 +18,7 @@ body {
   margin: 0;
   padding: 0 0 10% 0;
   border-radius: 4px;
-  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
   background-color: #fafafa;
 }
 
