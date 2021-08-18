@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Books from './components/books/Books';
+import Books from './components/books/Page';
 import Categories from './components/categories/Categories';
 import Nav from './components/Nav';
 
