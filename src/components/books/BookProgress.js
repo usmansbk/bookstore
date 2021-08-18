@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const Progress = ({ progress }) => {
+const BookProgress = ({ progress }) => {
   const { completed, currentChapter } = progress;
   return (
     <div>
@@ -16,11 +16,11 @@ const Progress = ({ progress }) => {
   );
 };
 
-Progress.propTypes = {
+BookProgress.propTypes = {
   progress: PropTypes.shape({
     currentChapter: PropTypes.string.isRequired,
     completed: PropTypes.string.isRequired,
   }).isRequired,
 };
 
-export default Progress;
+export default BookProgress;

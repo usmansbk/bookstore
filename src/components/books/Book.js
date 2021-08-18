@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import Progress from './Progress';
+import Progress from './BookProgress';
 
 const Actions = () => (
   <div>
