@@ -53,7 +53,10 @@ const reducer = (state = initialState, action) => {
     case REMOVE_BOOK:
       return state.filter((book) => book.id !== action.id);
     case LOAD_BOOKS:
-      return Object.values(action.payload).map(([book]) => book);
+      return Object.entries(action.payload).map(([id, value]) => {
+        const [book] = value;
+        return { id, ...book };
+      });
     default:
       return state;
   }
