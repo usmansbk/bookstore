@@ -62,10 +62,14 @@ export const createBook = (book) => async (dispatch) => {
 };
 
 export const deleteBook = (id) => async (dispatch) => {
-  const isDeleted = await API.deleteBook(id);
-
-  if (isDeleted) {
+  if (id.startsWith('mock-')) {
     dispatch(removeBook(id));
+  } else {
+    const isDeleted = await API.deleteBook(id);
+
+    if (isDeleted) {
+      dispatch(removeBook(id));
+    }
   }
 };
 
