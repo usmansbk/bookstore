@@ -1,4 +1,5 @@
 import * as API from '../../api';
+import { getRandomNumber } from '../../utils';
 
 const ADD_BOOK = 'bookStore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
@@ -88,8 +89,8 @@ const reducer = (state = initialState, action) => {
         ...action.payload,
         author: 'Suzanne Collins',
         progress: {
-          currentChapter: 'Chapter 17',
-          completed: '64',
+          currentChapter: `Chapter ${getRandomNumber()}`,
+          completed: `${getRandomNumber()}`,
         },
       }];
     case REMOVE_BOOK:
@@ -102,8 +103,8 @@ const reducer = (state = initialState, action) => {
           ...book,
           author: 'Suzanne Collins',
           progress: {
-            currentChapter: 'Chapter 17',
-            completed: '64',
+            currentChapter: `Chapter ${getRandomNumber()}`,
+            completed: `${getRandomNumber()}`,
           },
         };
       });
