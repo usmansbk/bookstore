@@ -86,10 +86,10 @@ const reducer = (state = initialState, action) => {
     case ADD_BOOK:
       return [...state, {
         ...action.payload,
-        author: 'Suzanne Collins',
+        author: 'Author not set',
         progress: {
-          currentChapter: 'Chapter 17',
-          completed: '64',
+          currentChapter: 'Introduction',
+          completed: '0',
         },
       }];
     case REMOVE_BOOK:
@@ -100,10 +100,10 @@ const reducer = (state = initialState, action) => {
         return {
           item_id: key,
           ...book,
-          author: 'Suzanne Collins',
+          author: 'Author not set',
           progress: {
-            currentChapter: 'Chapter 17',
-            completed: '64',
+            currentChapter: 'Introduction',
+            completed: '0',
           },
         };
       });
