@@ -1,0 +1,53 @@
+.percent-complete {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  color: #121212;
+}
+
+.completed {
+  font-family: "Montserrat", sans-serif;
+  font-size: 00.875rem;
+  opacity: 0.5;
+  color: #121212;
+}
+
+.progress-container {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.current-chapter-label {
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  font-size: 0.813rem;
+  color: #121212;
+  opacity: 0.5;
+}
+
+.current-chapter {
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  margin-top: 0.438rem;
+  font-size: 1rem;
+  color: #121212;
+  letter-spacing: -0.4px;
+}
+
+.primary-button {
+  border: none;
+  background-color: #0290ff;
+  border-radius: 3px;
+  padding: 8px 24px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  color: white;
+}
+
+.current-chapter-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import './BookProgress.css';
 
 const BookProgress = ({ progress }) => {
   const { completed, currentChapter } = progress;

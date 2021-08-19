@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { deleteBook } from '../../redux/books/books';
+import './ActionButtons.css';
 
 const ActionButtons = ({ id }) => {
   const dispatch = useDispatch();
