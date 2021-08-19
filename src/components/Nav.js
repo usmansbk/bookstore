@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { Link, NavLink } from 'react-router-dom';
+import IconButton from './IconButton';
 import './Nav.css';
 
 const Nav = ({ title, routes }) => (
@@ -12,6 +13,7 @@ const Nav = ({ title, routes }) => (
         </li>
       ))}
     </ul>
+    <IconButton name="person" />
   </nav>
 );
 
