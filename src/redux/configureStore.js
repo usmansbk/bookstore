@@ -3,7 +3,7 @@ import logger from 'redux-logger';
 import booksReducer from './books/books';
 
 const reducer = combineReducers({
-  booksReducer,
+  books: booksReducer,
 });
 
 const store = createStore(
