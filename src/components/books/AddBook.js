@@ -1,11 +1,12 @@
-import PropTypes from 'prop-types';
 import { useState } from 'react';
 import { nanoid } from 'nanoid';
 import { useDispatch } from 'react-redux';
 import { createBook } from '../../redux/books/books';
 import './AddBook.css';
 
-const AddBook = ({ categories = [] }) => {
+const categories = ['Action', 'Science Fiction', 'Economy'];
+
+const AddBook = () => {
   const dispatch = useDispatch();
   const [title, setTitle] = useState('');
   const [category, setCategory] = useState(categories[0]);
@@ -38,10 +39,6 @@ const AddBook = ({ categories = [] }) => {
       </form>
     </section>
   );
-};
-
-AddBook.propTypes = {
-  categories: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default AddBook;

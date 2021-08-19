@@ -50,7 +50,7 @@ const BooksPage = () => {
     <div>
       <Books books={books} />
       <div className="horizontal-divider" />
-      <AddBook categories={books.map((book) => book.category)} />
+      <AddBook />
     </div>
   );
 };
