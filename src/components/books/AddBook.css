@@ -20,6 +20,15 @@
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   letter-spacing: -0.15px;
+  color: #121212;
+}
+
+.input:focus {
+  outline: none;
+  border: solid 1px #0290ff;
+}
+
+.input::placeholder {
   color: #c4c4c4;
 }
 
