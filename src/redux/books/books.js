@@ -49,7 +49,7 @@ const reducer = (state = initialState, action) => {
     case ADD_BOOK:
       return [...state, {
         ...action.payload,
-        author: 'Suzanne Collins',
+        author: 'Author not set',
         progress: {
           currentChapter: 'Introduction',
           completed: '0',
