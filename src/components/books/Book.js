@@ -15,10 +15,10 @@ const Book = ({ book }) => {
           <h4 className="book-category">{category}</h4>
           <h2 className="book-title">{title}</h2>
           <h6 className="book-author">{author}</h6>
+          <ActionButtons id={id} />
         </div>
         <Progress progress={progress} />
       </div>
-      <ActionButtons id={id} />
     </div>
   );
 };

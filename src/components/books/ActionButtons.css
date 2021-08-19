@@ -12,11 +12,12 @@
 .action-buttons {
   display: flex;
   align-items: center;
+  margin-top: 1.313rem;
 }
 
 .vertical-divider {
   width: 0.125rem;
   height: 1.5rem;
   background-color: #e8e8e8;
-  margin: 0 2%;
+  margin: 0 1rem;
 }
