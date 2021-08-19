@@ -47,7 +47,14 @@ export const removeBook = (id) => ({
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_BOOK:
-      return [...state, action.payload];
+      return [...state, {
+        ...action.payload,
+        author: 'Suzanne Collins',
+        progress: {
+          currentChapter: 'Introduction',
+          completed: '0',
+        },
+      }];
     case REMOVE_BOOK:
       return state.filter((book) => book.id !== action.id);
     default:
