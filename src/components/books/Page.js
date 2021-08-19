@@ -1,5 +1,6 @@
 import Books from './Books';
 import AddBook from './AddBook';
+import './Page.css';
 
 const books = [
   {
@@ -37,6 +38,7 @@ const books = [
 const BooksPage = () => (
   <div>
     <Books books={books} />
+    <div className="horizontal-divider" />
     <AddBook categories={books.map((book) => book.category)} />
   </div>
 );
