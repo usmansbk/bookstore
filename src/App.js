@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import Books from './components/books/Page';
 import Categories from './components/categories/Categories';
