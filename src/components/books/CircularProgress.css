@@ -9,18 +9,11 @@
 
 .circular-progress {
   position: absolute;
+  border: solid 5px #307bbe;
+  border-left-color: #e8e8e8;
+  border-radius: 50%;
   width: 4.25rem;
   height: 4.25rem;
-  border-radius: 50%;
   border-style: solid;
   border-width: 5px;
-  border-color: #307bbe;
-}
-
-.circular-progress-negative {
-  position: absolute;
-  width: 4.25rem;
-  height: 4.25rem;
-  border-radius: 50%;
-  border: solid 5px #e8e8e8;
 }
