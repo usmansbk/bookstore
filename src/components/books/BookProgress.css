@@ -1,7 +1,19 @@
+.progress-container {
+  display: flex;
+  align-items: center;
+}
+
 .percent-complete {
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   color: #121212;
+}
+
+.progress-divider {
+    width: 0.125rem;
+    height: 4.375rem;
+    margin: 0 3.688rem 0 4.938rem;
+    background-color: #e8e8e8;
 }
 
 .completed {
@@ -11,11 +23,12 @@
   color: #121212;
 }
 
-.progress-container {
-  display: flex;
-  flex-grow: 1;
-  align-items: center;
-  justify-content: space-between;
+
+.current-chapter-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 14rem;
 }
 
 .current-chapter-label {
@@ -44,10 +57,4 @@
   font-weight: 300;
   letter-spacing: 0.5px;
   color: white;
-}
-
-.current-chapter-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
 }
