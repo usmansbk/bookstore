@@ -1,3 +1,9 @@
+.add-form {
+    margin-top: 20px;
+    display: flex;
+    gap: 32px;
+}
+
 .form-title {
   font-family: "Montserrat", sans-serif;
   font-size: 1.25rem;
@@ -17,7 +23,16 @@
     color: #c4c4c4;
 }
 
+.title-input {
+    width: 50%;
+}
+
+.category-input {
+    width: 30%;
+}
+
 .primary-button-big {
+    width: 20%;
     padding: 12px;
     border-radius: 3px;
     background-color: #0290ff;
@@ -27,10 +42,4 @@
     font-size: 0.813rem;
     font-weight: bold;
     font-family: "Roboto Slab", serif;
-}
-
-.add-form {
-    margin-top: 20px;
-    display: flex;
-    gap: 32px;
 }

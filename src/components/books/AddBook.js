@@ -28,8 +28,8 @@ const AddBook = ({ categories = [] }) => {
     <section>
       <h2 className="form-title">ADD NEW BOOK</h2>
       <form className="add-form" onSubmit={handleSubmit}>
-        <input className="input" value={title} placeholder="Book title" required onChange={handleTitle} />
-        <select className="input" value={category} onChange={handleCategory}>
+        <input className="input title-input" value={title} placeholder="Book title" required onChange={handleTitle} />
+        <select className="input category-input" value={category} onChange={handleCategory}>
           {categories.map((category) => (
             <option key={category} value={category}>{category}</option>
           ))}
