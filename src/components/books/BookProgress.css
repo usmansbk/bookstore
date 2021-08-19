@@ -35,6 +35,7 @@
 }
 
 .primary-button {
+  cursor: pointer;
   border: none;
   background-color: #0290ff;
   border-radius: 3px;
