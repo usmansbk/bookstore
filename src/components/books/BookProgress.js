@@ -1,16 +1,14 @@
 import PropTypes from 'prop-types';
 import './BookProgress.css';
 import CircularProgress from './CircularProgress';
+import Stat from './Stat';
 
 const BookProgress = ({ progress }) => {
   const { completed, currentChapter } = progress;
   return (
     <div className="progress-container">
       <CircularProgress />
-      <div className="progress-stat">
-        <p className="percent-complete">{`${completed}%`}</p>
-        <p className="completed">Completed</p>
-      </div>
+      <Stat percent={completed} />
       <div className="progress-divider" />
       <div className="current-chapter-container">
         <div>

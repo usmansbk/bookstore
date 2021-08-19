@@ -3,26 +3,12 @@
   align-items: center;
 }
 
-.percent-complete {
-  font-family: "Montserrat", sans-serif;
-  font-size: 2rem;
-  color: #121212;
-}
-
 .progress-divider {
     width: 0.125rem;
     height: 4.375rem;
     margin: 0 3.688rem 0 4.938rem;
     background-color: #e8e8e8;
 }
-
-.completed {
-  font-family: "Montserrat", sans-serif;
-  font-size: 00.875rem;
-  opacity: 0.5;
-  color: #121212;
-}
-
 
 .current-chapter-container {
     display: flex;
