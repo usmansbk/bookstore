@@ -9,9 +9,14 @@ const BookProgress = ({ progress }) => {
         <p className="completed">Completed</p>
       </div>
       <div className="progress-divider" />
-      <div>
-        <p className="current-chapter-label">CURRENT CHAPTER</p>
-        <p className="current-chapter">{currentChapter}</p>
+      <div className="current-chapter-container">
+        <div>
+          <p className="current-chapter-label">CURRENT CHAPTER</p>
+          <p className="current-chapter">{currentChapter}</p>
+        </div>
+        <div>
+          <button className="primary-button" type="button">UPDATE PROGRESS</button>
+        </div>
       </div>
     </div>
   );

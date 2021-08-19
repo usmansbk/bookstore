@@ -16,6 +16,7 @@
 
 .book-info {
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
 }
 
@@ -60,33 +61,35 @@
 }
 
 .action-buttons {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .vertical-divider {
-    width: 0.125rem;
-    height: 1.5rem;
-    background-color: #e8e8e8;
-    margin: 0 2%;
+  width: 0.125rem;
+  height: 1.5rem;
+  background-color: #e8e8e8;
+  margin: 0 2%;
 }
 
 .percent-complete {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   color: #121212;
 }
 
 .completed {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 00.875rem;
   opacity: 0.5;
   color: #121212;
 }
 
 .progress-container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .current-chapter-label {
@@ -103,4 +106,21 @@
   font-size: 1rem;
   color: #121212;
   letter-spacing: -0.4px;
+}
+
+.primary-button {
+  border: none;
+  background-color: #0290ff;
+  border-radius: 3px;
+  padding: 8px 24px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  color: white;
+}
+
+.current-chapter-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
