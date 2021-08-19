@@ -12,7 +12,7 @@ a {
 }
 
 .nav-brand {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.875rem;
   font-weight: bold;
   color: #0290ff;
@@ -26,13 +26,13 @@ a {
 
 .nav-link {
   opacity: 0.5;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 0.813rem;
   color: #121212;
   letter-spacing: 1.9px;
 }
 
 .active-link {
-    opacity: 1;
-    color: #121212
+  opacity: 1;
+  color: #121212;
 }
