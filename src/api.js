@@ -1,8 +1,8 @@
 const BASE_URL = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi';
 const STORAGE_KEY = 'appId';
 
-const post = (endpoint, body = {}) => fetch(`${BASE_URL}${endpoint}`, {
-  method: 'POST',
+const post = (endpoint, body = {}, method = 'POST') => fetch(`${BASE_URL}${endpoint}`, {
+  method,
   body: JSON.stringify(body),
   headers: {
     'Content-type': 'application/json; charset=UTF-8',
@@ -38,7 +38,7 @@ export const deleteBook = async (id) => {
   const appId = localStorage.getItem(STORAGE_KEY);
   const response = await post(`/apps/${appId}/books/${id}`, {
     item_id: id,
-  });
+  }, 'DELETE');
 
   const result = await response.text();
 
