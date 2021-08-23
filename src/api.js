@@ -30,8 +30,12 @@ export const createBook = async (book) => {
 export const getBooks = async () => {
   const appId = localStorage.getItem(STORAGE_KEY);
   const response = await fetch(`${BASE_URL}/apps/${appId}/books`);
-
-  return response.json();
+  try {
+    const books = await response.json();
+    return books;
+  } catch (error) {
+    return {};
+  }
 };
 
 export const deleteBook = async (id) => {
