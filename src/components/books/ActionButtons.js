@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../../redux/books/books';
+import { deleteBook } from '../../redux/books/books';
 
 const ActionButtons = ({ id }) => {
   const dispatch = useDispatch();
 
-  const handleRemove = () => dispatch(removeBook(id));
+  const handleRemove = () => dispatch(deleteBook(id));
 
   return (
     <div>

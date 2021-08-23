@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { nanoid } from 'nanoid';
 import { useDispatch } from 'react-redux';
-import { addBook } from '../../redux/books/books';
+import { createBook } from '../../redux/books/books';
 
 const categories = ['Action', 'Science Fiction', 'Economy'];
 
@@ -14,11 +14,11 @@ const AddBook = () => {
   const handleCategory = (event) => setCategory(event.target.value);
   const handleSubmit = (event) => {
     const book = {
-      id: nanoid(),
+      item_id: nanoid(),
       title,
       category,
     };
-    dispatch(addBook(book));
+    dispatch(createBook(book));
     setTitle('');
     setCategory(categories[0]);
     event.preventDefault();
