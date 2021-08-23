@@ -1,0 +1,12 @@
+.percent-complete {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  color: #121212;
+}
+
+.completed {
+  font-family: "Montserrat", sans-serif;
+  font-size: 00.875rem;
+  opacity: 0.5;
+  color: #121212;
+}

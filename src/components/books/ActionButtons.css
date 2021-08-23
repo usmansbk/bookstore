@@ -1,0 +1,23 @@
+.button-outline {
+  font-family: "Roboto Slab", serif;
+  background-color: transparent;
+  border: none;
+  color: #4386bf;
+  font-size: 0.875rem;
+  font-weight: 300;
+  align-items: center;
+  cursor: pointer;
+}
+
+.action-buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 1.313rem;
+}
+
+.vertical-divider {
+  width: 0.125rem;
+  height: 1.5rem;
+  background-color: #e8e8e8;
+  margin: 0 1rem;
+}

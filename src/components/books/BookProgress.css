@@ -1,0 +1,47 @@
+.progress-container {
+  display: flex;
+  align-items: center;
+}
+
+.progress-divider {
+  width: 0.125rem;
+  height: 4.375rem;
+  margin: 0 3.688rem 0 4.938rem;
+  background-color: #e8e8e8;
+}
+
+.current-chapter-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 14rem;
+}
+
+.current-chapter-label {
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  font-size: 0.813rem;
+  color: #121212;
+  opacity: 0.5;
+}
+
+.current-chapter {
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  margin-top: 0.438rem;
+  font-size: 1rem;
+  color: #121212;
+  letter-spacing: -0.4px;
+}
+
+.primary-button {
+  cursor: pointer;
+  border: none;
+  background-color: #0290ff;
+  border-radius: 3px;
+  padding: 8px 24px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  color: white;
+}

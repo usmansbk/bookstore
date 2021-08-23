@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import Books from './components/books/Page';
 import Categories from './components/categories/Categories';
@@ -22,11 +22,13 @@ const App = () => (
   <Provider store={store}>
     <Router basename={process.env.PUBLIC_URL}>
       <Nav title="Bookstore CMS" routes={routes} />
-      <Switch>
-        {routes.map(({ path, component }) => (
-          <Route path={path} exact key={path}>{component}</Route>
-        ))}
-      </Switch>
+      <div className="container">
+        <Switch>
+          {routes.map(({ path, component }) => (
+            <Route path={path} exact key={path}>{component}</Route>
+          ))}
+        </Switch>
+      </div>
     </Router>
   </Provider>
 );

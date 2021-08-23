@@ -19,7 +19,7 @@ The Bookstore website is a content management system that allows you to:
 
 ## Live Demo
 
-[Live Demo Link](https://usmansbk.github.io/bookstore)
+[Live Demo Link](https://pedantic-beaver-cb923b.netlify.app/)
 
 ## Getting Started
 
